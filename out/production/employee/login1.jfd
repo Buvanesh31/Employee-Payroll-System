@@ -1,0 +1,70 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {comp panel1:::p::p, space :::x, par l {par l:l {comp label1::t:p:203:p, comp label2::t:p:160:p}, seq l {space :p:43:p, par l {comp label3:::p:171:p, comp textField1:::p:182:p, comp passwordField1:::p:184:p, seq l {comp button1:::p::p, space u:::p, comp button2:::p:86:p}}}}, space :p:51:p}}"
+			"$verticalGroup": "par l {seq {space :p:19:p, comp label1:::p::p, space :p:52:p, comp label2:::p:32:p, space :p:35:p, comp textField1:::p::p, space :p:44:p, comp label3:::p:37:p, space :p:38:p, comp passwordField1:::p::p, space ::42:x, par b {comp button1::b:p::p, comp button2::b:p::p}, space :p:75:p}, comp panel1::l:::x}"
+		} ) {
+			name: "log1"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Login"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 30, false )
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "User Id"
+				"font": new java.awt.Font( "Calibri", 0, 28 )
+				"background": new java.awt.Color( 242, 242, 24, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Password"
+				"font": new com.jformdesigner.model.SwingDerivedFont( "Calibri", 0, 14, false )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Employee"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "button1KeyPressed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Admin"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField1"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:16:p, comp label4:::p:221:p, space ::23:x}}"
+				"$verticalGroup": "par l {seq t {space ::144:x, comp label4:::p:238:p, space :p:139:p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 51, 102, 255, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "text"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\buvanesh\\IdeaProjects\\download (1).jpg" )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 560, 560 )
+			"location": new java.awt.Point( 25, 15 )
+		} )
+	}
+}

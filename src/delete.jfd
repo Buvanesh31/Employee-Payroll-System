@@ -1,0 +1,34 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::25:x, comp label1:::p:336:p, space :p:23:p}, seq {par l {seq {space :p:56:p, comp label2:::p::p, space :p:35:p, comp textField1:::p:139:p}, seq l {space :p:153:p, comp button1:::p::p}}, space ::56:x}}"
+			"$verticalGroup": "par l {seq l {space :p:35:p, comp label1:::p:47:p, space s:::p, par b {comp label2::b:p::p, comp textField1::b:p::p}, space :p:47:p, comp button1:::p::p, space ::54:x}}"
+		} ) {
+			name: "del"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "DELETE EMPLOYEE RECORD"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Enter Employee Id:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "DELETE"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

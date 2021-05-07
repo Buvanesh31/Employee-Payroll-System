@@ -1,0 +1,66 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::t:::x, seq {space :p:88:p, par t {comp button1:::p:90:p, comp button4:::p:90:p}, space :p:77:p, par t {comp button2:::p:90:p, comp button5:::p:90:p}, space :p:71:p, par l {comp button3:::p:90:p, comp button6:::::x}, space ::78:x}}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space :p:40:p, par b {comp button2::b:p:80:p, comp button1::b:p:80:p, comp button3::b:p:80:p}, space :p:30:p, par b {comp button4::b:p:78:p, comp button5::b:p:78:p, comp button6::b:p:78:p}, space ::34:x}}"
+		} ) {
+			name: "h1"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :p:121:p, comp labet1:::p:320:p, space ::143:x}, seq t {space :0:517:x, comp menuItem1:::p::p}}"
+				"$verticalGroup": "par l {seq l {comp menuItem1:::p::p, space :p:42:p, comp labet1:::p:59:p, space ::62:x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 0, 102, 204, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "labet1"
+					"text": "Administrator Login"
+					"font": new java.awt.Font( "Calibri", 0, 36 )
+					"foreground": sfield java.awt.Color white
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JMenuItem" ) {
+					name: "menuItem1"
+					"text": "LOGOUT"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem1ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "ADD "
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "SEARCH"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "UPDATE"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "ALLOWANCE"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button5"
+				"text": "DEDUCTION"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button6"
+				"text": "DELETE"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button6ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button6ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 600, 485 )
+		} )
+	}
+}

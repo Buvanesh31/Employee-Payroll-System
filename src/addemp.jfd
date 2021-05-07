@@ -1,0 +1,99 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:106:p, comp label2:::p:174:p, space :::x, comp label10:::p::p, space :p:92:p}, seq l {space :p:68:p, par l {seq {par l {comp label3::l:p::p, comp label4::l:p::p, comp label5::l:p::p, comp label6::l:p::p, comp label7::l:p::p}, space :p:47:p, par l:::p {comp textField1::l::140:x, comp textField3::l::140:x, comp textField2::l::140:x, comp textField4::l::140:x, comp textField5::l::140:x}, space ::38:x, comp label11:::p::p, space :p:34:p, comp textField8:::p:129:p, space ::53:x}, seq {par l {comp label8:::p::p, comp label9:::p::p}, space :p:50:p, par l {comp textField6:::p:140:p, comp textField7:::p:140:p}, space :0:303:x}}}, seq {par l {seq l {space :p:178:p, comp label1:::p:260:p}, seq l {space :p:222:p, comp button1:::p::p, space :p:76:p, comp button2:::p::p}}, space ::170:x}}"
+			"$verticalGroup": "par l {seq l {space :p:23:p, comp label1:::p:37:p, space s:::p, par b {comp label10::b:p::p, comp label2::b:p::p}, space s:::p, par b {comp label3::b:p::p, comp textField1::b:p:20:p, comp textField8::b:p:20:p, comp label11::b:p::p}, space :p:46:p, par b {comp label4::b:p::p, comp textField2::b:p:20:p}, space :p:36:p, par b {comp label5::b:p::p, comp textField3::b:p:20:p}, space :p:34:p, par b {comp label6::b:p::p, comp textField4::b:p:20:p}, space :p:35:p, par b {comp label7::b:p::p, comp textField5::b:p:20:p}, space :p:36:p, par l {seq {comp textField6:::p:20:p, space :p:35:p, par b {comp textField7::b:p:20:p, comp label9::b:p::p}}, comp label8:::p::p}, space ::44:x, par b {comp button1::b:p::p, comp button2::b:p::p}, space :p:29:p}}"
+		} ) {
+			name: "addemploy"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "ADD EMPLOYEE"
+				"font": new java.awt.Font( "Calibri", 0, 37 )
+				"foreground": new java.awt.Color( 51, 51, 51, 255 )
+				"horizontalAlignment": 0
+				"verticalAlignment": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "EMPLOYEE DETAILS"
+				"font": new java.awt.Font( "Calibri", 0, 20 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Employee ID"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Password"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Name"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Address"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "Email"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "Phone"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "Designation"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": "SALARY DETAILS"
+				"font": new java.awt.Font( "Calibri", 0, 20 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label11"
+				"text": "Basic Pay"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField4"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField5"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField6"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField7"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField8"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "ADD"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "CLEAR"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 640, 625 )
+		} )
+	}
+}
